@@ -144,6 +144,25 @@
             line-height: 1.8;
         }
 
+        .website-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(212, 165, 212, 0.2);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            border: 2px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .website-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
         .cta-button {
             display: inline-block;
             padding: 1rem 2.5rem;
@@ -156,6 +175,7 @@
             border: none;
             cursor: pointer;
             box-shadow: 0 4px 15px rgba(139, 123, 168, 0.3);
+            margin-left: 1rem;
         }
 
         .cta-button:hover {
@@ -182,6 +202,12 @@
 
             .hero-text h1 {
                 font-size: 2.5rem;
+            }
+
+            .cta-button {
+                margin-left: 0;
+                display: block;
+                width: 100%;
             }
         }
 
@@ -221,6 +247,22 @@
             color: var(--text-light);
             margin-bottom: 1rem;
             line-height: 1.8;
+        }
+
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
         }
 
         .skills-grid {
@@ -460,6 +502,23 @@
             font-size: 0.95rem;
         }
 
+        .footer-website-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .footer-website-link:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -498,7 +557,12 @@
             <div class="hero-text">
                 <h1>Ready to work a...</h1>
                 <p>Graphic Designer, 3D Artist, Video Animator & Logo Designer. Crafting clean, elite digital experiences that elevate your brand.</p>
-                <button class="cta-button">Get Started Today</button>
+                <div>
+                    <a href="https://ppw-by-tuba-ltd.durable.site" class="website-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-globe"></i> Visit My Portfolio
+                    </a>
+                    <button class="cta-button">Get Started Today</button>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="images/profile-hero.jpeg" alt="Professional Portfolio Profile">
@@ -514,6 +578,9 @@
                 <h3>Who I Am</h3>
                 <p>I'm a passionate graphic designer, 3D artist, and video animator with expertise in creating compelling visual experiences. With 1.2k followers and 18 posts showcasing my work, I specialize in transforming visions into stunning visual realities.</p>
                 <p>My professional dashboard shows 1M views in the last 30 days, proving the impact of creative work that combines aesthetics with innovation.</p>
+                <a href="https://ppw-by-tuba-ltd.durable.site" class="portfolio-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-arrow-right"></i> Explore My Full Portfolio
+                </a>
             </div>
             <div>
                 <h3>My Skills</h3>
@@ -668,6 +735,9 @@
         </div>
         <p>&copy; 2026 PixelPenWorks. All rights reserved.</p>
         <p>Graphic Designer • 3D Artist • Video Animator • Logo Designer</p>
+        <a href="https://ppw-by-tuba-ltd.durable.site" class="footer-website-link" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-globe"></i> ppw-by-tuba-ltd.durable.site
+        </a>
     </footer>
 
     <script src="script.js"></script>
